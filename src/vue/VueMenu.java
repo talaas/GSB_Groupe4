@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vues;
+package vue;
 
-import controleur.CtrlAbstrait;
+//import controleur.CtrlAbstrait;
 
 /**
  *
  * @author btssio
  */
-public class VueMenu extends VueAbstraite {
+public class VueMenu {
 
     public VueMenu(CtrlAbstrait ctrl) {
         super(ctrl);
@@ -39,6 +39,11 @@ public class VueMenu extends VueAbstraite {
         jLabelpraticiens = new javax.swing.JLabel();
         jLabelMedicaments = new javax.swing.JLabel();
         jLabelquit = new javax.swing.JLabel();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu5 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
+        jMenu7 = new javax.swing.JMenu();
+        jMenu8 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,6 +58,20 @@ public class VueMenu extends VueAbstraite {
         jLabelMedicaments.setText("Medicaments");
 
         jLabelquit.setText("Quitter");
+
+        jMenu5.setText("Compte-Rendus");
+        jMenuBar2.add(jMenu5);
+
+        jMenu6.setText("Visiteurs");
+        jMenuBar2.add(jMenu6);
+
+        jMenu7.setText("Praticiens");
+        jMenuBar2.add(jMenu7);
+
+        jMenu8.setText("Medicaments");
+        jMenuBar2.add(jMenu8);
+
+        setJMenuBar(jMenuBar2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -109,7 +128,7 @@ public class VueMenu extends VueAbstraite {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButtonQuitter, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelquit))
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         pack();
@@ -127,5 +146,10 @@ public class VueMenu extends VueAbstraite {
     private javax.swing.JLabel jLabelquit;
     private javax.swing.JLabel jLabeltitre;
     private javax.swing.JLabel jLabelvisiteurs;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenuBar jMenuBar2;
     // End of variables declaration//GEN-END:variables
 }

@@ -3,24 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vues;
+package vue;
 
-import controleur.CtrlAbstrait;
+//import controleur.CtrlAbstrait;
+
+import java.awt.Container;
+import javax.swing.JMenuBar;
+
 
 /**
  *
  * @author btssio
  */
-public class VueVisiteurs extends VueAbstraite {
+public class VueVisiteurs {
 
     /**
      * Creates new form visiteurs
-     */
-    public VueVisiteurs(CtrlAbstrait ctrl) {
-        super(ctrl);
-        initComponents();
-        this.setLocation(500, 200);
-    }
+//     */
+//    public VueVisiteurs(CtrlAbstrait ctrl) {
+//        super(ctrl);
+//        initComponents();
+//        this.setLocation(500, 200);
+//    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -51,6 +55,11 @@ public class VueVisiteurs extends VueAbstraite {
         jButtonsuiv = new javax.swing.JButton();
         jButtonfermer = new javax.swing.JButton();
         jTextFieldville = new javax.swing.JTextField();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu5 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
+        jMenu7 = new javax.swing.JMenu();
+        jMenu8 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -87,6 +96,20 @@ public class VueVisiteurs extends VueAbstraite {
         jButtonsuiv.setText("Suivant");
 
         jButtonfermer.setText("Fermer");
+
+        jMenu5.setText("Compte-Rendus");
+        jMenuBar2.add(jMenu5);
+
+        jMenu6.setText("Visiteurs");
+        jMenuBar2.add(jMenu6);
+
+        jMenu7.setText("Praticiens");
+        jMenuBar2.add(jMenu7);
+
+        jMenu8.setText("Medicaments");
+        jMenuBar2.add(jMenu8);
+
+        setJMenuBar(jMenuBar2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -178,7 +201,7 @@ public class VueVisiteurs extends VueAbstraite {
                     .addComponent(jButtonprec)
                     .addComponent(jButtonsuiv)
                     .addComponent(jButtonfermer))
-                .addGap(0, 17, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -204,10 +227,31 @@ public class VueVisiteurs extends VueAbstraite {
     private javax.swing.JLabel jLabelsecteur;
     private javax.swing.JLabel jLabeltitre;
     private javax.swing.JLabel jLabelville;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenuBar jMenuBar2;
     public javax.swing.JTextField jTextFieldadresse;
     public javax.swing.JTextField jTextFieldcdp;
     public javax.swing.JTextField jTextFieldnom;
     public javax.swing.JTextField jTextFieldprenom;
     public javax.swing.JTextField jTextFieldville;
     // End of variables declaration//GEN-END:variables
+
+    private void setJMenuBar(JMenuBar jMenuBar2) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private Container getContentPane() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void pack() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void setDefaultCloseOperation(int EXIT_ON_CLOSE) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

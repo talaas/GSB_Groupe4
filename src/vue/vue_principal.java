@@ -134,4 +134,6 @@ public class vue_principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu8;
     private javax.swing.JMenuBar jMenuBar2;
     // End of variables declaration//GEN-END:variables
+
+
 }
