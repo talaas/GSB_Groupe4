@@ -27,25 +27,15 @@ public class vue_principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabelComptesRendus = new javax.swing.JLabel();
-        jLabelVisiteurs = new javax.swing.JLabel();
-        jLabelPracticiens = new javax.swing.JLabel();
-        jLabelMedicaments = new javax.swing.JLabel();
-        jButtonComptesRendus = new javax.swing.JButton();
-        jButtonVisiteurs = new javax.swing.JButton();
-        jButtonPracticiens = new javax.swing.JButton();
-        jButtonMedicaments = new javax.swing.JButton();
         jButtonQuitter = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu5 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
+        jMenu7 = new javax.swing.JMenu();
+        jMenu8 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabelComptesRendus.setText("Comptes-Rendus");
-
-        jLabelVisiteurs.setText("Visiteurs");
-
-        jLabelPracticiens.setText("Praticiens");
-
-        jLabelMedicaments.setText("Medicaments");
 
         jButtonQuitter.setText("Quitter");
         jButtonQuitter.addActionListener(new java.awt.event.ActionListener() {
@@ -54,57 +44,44 @@ public class vue_principal extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("Bonjour !");
+
+        jMenu5.setText("Compte-Rendus");
+        jMenuBar2.add(jMenu5);
+        jMenu5.getAccessibleContext().setAccessibleName("Compte-Rendus");
+
+        jMenu6.setText("Visiteurs");
+        jMenuBar2.add(jMenu6);
+
+        jMenu7.setText("Praticiens");
+        jMenuBar2.add(jMenu7);
+
+        jMenu8.setText("Medicaments");
+        jMenuBar2.add(jMenu8);
+
+        setJMenuBar(jMenuBar2);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(177, 177, 177)
-                .addComponent(jButtonQuitter)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(330, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jButtonMedicaments, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabelMedicaments))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jButtonPracticiens, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabelPracticiens))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButtonComptesRendus, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonVisiteurs, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelVisiteurs)
-                            .addComponent(jLabelComptesRendus, javax.swing.GroupLayout.Alignment.TRAILING))))
-                .addGap(144, 144, 144))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonQuitter)
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(236, 236, 236)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(293, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(110, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelComptesRendus)
-                    .addComponent(jButtonComptesRendus, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelVisiteurs)
-                    .addComponent(jButtonVisiteurs, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelPracticiens)
-                    .addComponent(jButtonPracticiens, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelMedicaments)
-                    .addComponent(jButtonMedicaments, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addContainerGap(95, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(106, 106, 106)
                 .addComponent(jButtonQuitter)
-                .addGap(44, 44, 44))
+                .addContainerGap())
         );
 
         pack();
@@ -150,14 +127,12 @@ public class vue_principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonComptesRendus;
-    private javax.swing.JButton jButtonMedicaments;
-    private javax.swing.JButton jButtonPracticiens;
     private javax.swing.JButton jButtonQuitter;
-    private javax.swing.JButton jButtonVisiteurs;
-    private javax.swing.JLabel jLabelComptesRendus;
-    private javax.swing.JLabel jLabelMedicaments;
-    private javax.swing.JLabel jLabelPracticiens;
-    private javax.swing.JLabel jLabelVisiteurs;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenuBar jMenuBar2;
     // End of variables declaration//GEN-END:variables
 }
