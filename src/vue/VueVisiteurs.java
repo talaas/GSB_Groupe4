@@ -53,7 +53,7 @@ public class VueVisiteurs {
         jComboBoxlabo = new javax.swing.JComboBox();
         jButtonprec = new javax.swing.JButton();
         jButtonsuiv = new javax.swing.JButton();
-        jButtonfermer = new javax.swing.JButton();
+        jButtonQuitter = new javax.swing.JButton();
         jTextFieldville = new javax.swing.JTextField();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu5 = new javax.swing.JMenu();
@@ -95,7 +95,12 @@ public class VueVisiteurs {
 
         jButtonsuiv.setText("Suivant");
 
-        jButtonfermer.setText("Fermer");
+        jButtonQuitter.setText("Quitter");
+        jButtonQuitter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonQuitterActionPerformed(evt);
+            }
+        });
 
         jMenu5.setText("Compte-Rendus");
         jMenuBar2.add(jMenu5);
@@ -159,7 +164,7 @@ public class VueVisiteurs {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jButtonsuiv)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
-                                .addComponent(jButtonfermer)))))
+                                .addComponent(jButtonQuitter)))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -200,7 +205,7 @@ public class VueVisiteurs {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonprec)
                     .addComponent(jButtonsuiv)
-                    .addComponent(jButtonfermer))
+                    .addComponent(jButtonQuitter))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -211,8 +216,12 @@ public class VueVisiteurs {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBoxlaboActionPerformed
 
+    private void jButtonQuitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonQuitterActionPerformed
+       System.exit(0);
+    }//GEN-LAST:event_jButtonQuitterActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton jButtonfermer;
+    public javax.swing.JButton jButtonQuitter;
     public javax.swing.JButton jButtonok;
     public javax.swing.JButton jButtonprec;
     public javax.swing.JButton jButtonsuiv;

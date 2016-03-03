@@ -103,7 +103,7 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jButtonsuiv" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="69" max="32767" attributes="0"/>
-                              <Component id="jButtonfermer" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButtonQuitter" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -157,7 +157,7 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jButtonprec" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButtonsuiv" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButtonfermer" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonQuitter" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
@@ -292,10 +292,13 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="jButtonfermer">
+    <Component class="javax.swing.JButton" name="jButtonQuitter">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Fermer"/>
+        <Property name="text" type="java.lang.String" value="Quitter"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonQuitterActionPerformed"/>
+      </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>

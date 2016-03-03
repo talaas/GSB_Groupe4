@@ -52,7 +52,7 @@ public class VueMedicaments {
         jTextFieldprix = new javax.swing.JTextField();
         jComboBoxfamille = new javax.swing.JComboBox();
         jButtonsuiv = new javax.swing.JButton();
-        jButtonfermer = new javax.swing.JButton();
+        jButtonQuitter = new javax.swing.JButton();
         jButtonprec = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -85,7 +85,12 @@ public class VueMedicaments {
 
         jButtonsuiv.setText("Suivant");
 
-        jButtonfermer.setText("Fermer");
+        jButtonQuitter.setText("Quitter");
+        jButtonQuitter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonQuitterActionPerformed(evt);
+            }
+        });
 
         jButtonprec.setText("Précédent");
 
@@ -145,7 +150,7 @@ public class VueMedicaments {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonsuiv)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButtonfermer)
+                .addComponent(jButtonQuitter)
                 .addGap(23, 23, 23))
         );
         layout.setVerticalGroup(
@@ -183,7 +188,7 @@ public class VueMedicaments {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonsuiv)
-                    .addComponent(jButtonfermer)
+                    .addComponent(jButtonQuitter)
                     .addComponent(jButtonprec))
                 .addContainerGap(29, Short.MAX_VALUE))
         );
@@ -191,8 +196,12 @@ public class VueMedicaments {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButtonQuitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonQuitterActionPerformed
+      System.exit(0);
+    }//GEN-LAST:event_jButtonQuitterActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonfermer;
+    private javax.swing.JButton jButtonQuitter;
     private javax.swing.JButton jButtonprec;
     private javax.swing.JButton jButtonsuiv;
     private javax.swing.JComboBox jComboBoxfamille;

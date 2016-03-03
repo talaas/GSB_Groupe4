@@ -95,7 +95,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jButtonsuiv" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="jButtonfermer" min="-2" max="-2" attributes="0"/>
+              <Component id="jButtonQuitter" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -142,7 +142,7 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jButtonsuiv" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButtonfermer" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonQuitter" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButtonprec" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="29" max="32767" attributes="0"/>
@@ -246,10 +246,13 @@
         <Property name="text" type="java.lang.String" value="Suivant"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButtonfermer">
+    <Component class="javax.swing.JButton" name="jButtonQuitter">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Fermer"/>
+        <Property name="text" type="java.lang.String" value="Quitter"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonQuitterActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButtonprec">
       <Properties>

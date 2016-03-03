@@ -41,7 +41,7 @@ public class VuePraticiens {
         jLabelville = new javax.swing.JLabel();
         jComboBoxsearch = new javax.swing.JComboBox();
         jLabellieu = new javax.swing.JLabel();
-        jButtonfermer = new javax.swing.JButton();
+        jButtonQuitter = new javax.swing.JButton();
         jLabelprenom = new javax.swing.JLabel();
         jTextFieldville = new javax.swing.JTextField();
         jButtonok = new javax.swing.JButton();
@@ -71,7 +71,12 @@ public class VuePraticiens {
 
         jLabellieu.setText("LIEU D'EXERCICE");
 
-        jButtonfermer.setText("Fermer");
+        jButtonQuitter.setText("Quitter");
+        jButtonQuitter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonQuitterActionPerformed(evt);
+            }
+        });
 
         jLabelprenom.setText("PRENOM");
 
@@ -136,7 +141,7 @@ public class VuePraticiens {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jButtonsuiv)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButtonfermer))))
+                                .addComponent(jButtonQuitter))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -190,15 +195,19 @@ public class VuePraticiens {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonprec)
                     .addComponent(jButtonsuiv)
-                    .addComponent(jButtonfermer))
+                    .addComponent(jButtonQuitter))
                 .addGap(21, 21, 21))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButtonQuitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonQuitterActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jButtonQuitterActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonfermer;
+    private javax.swing.JButton jButtonQuitter;
     private javax.swing.JButton jButtonok;
     private javax.swing.JButton jButtonprec;
     private javax.swing.JButton jButtonsuiv;
@@ -223,11 +232,11 @@ public class VuePraticiens {
     // End of variables declaration//GEN-END:variables
 
     public JButton getjButtonfermer() {
-        return jButtonfermer;
+        return jButtonQuitter;
     }
 
     public void setjButtonfermer(JButton jButtonfermer) {
-        this.jButtonfermer = jButtonfermer;
+        this.jButtonQuitter = jButtonfermer;
     }
 
     public JButton getjButtonok() {
