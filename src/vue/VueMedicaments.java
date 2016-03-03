@@ -3,24 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vues;
+package vue;
 
-import controleur.CtrlAbstrait;
+//import controleur.CtrlAbstrait;
+
+import java.awt.Container;
+
 
 /**
  *
  * @author btssio
  */
-public class VueMedicaments extends VueAbstraite {
+public class VueMedicaments {
 
     /**
      * Creates new form medicaments
      */
-    public VueMedicaments(CtrlAbstrait ctrl) {
-        super(ctrl);
-        initComponents();
-        this.setLocation(500, 200);
-    }
+//    public VueMedicaments(CtrlAbstrait ctrl) {
+//        super(ctrl);
+//        initComponents();
+//        this.setLocation(500, 200);
+//    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -210,4 +213,16 @@ public class VueMedicaments extends VueAbstraite {
     private javax.swing.JTextField jTextFieldnom;
     private javax.swing.JTextField jTextFieldprix;
     // End of variables declaration//GEN-END:variables
+
+    private void setDefaultCloseOperation(int EXIT_ON_CLOSE) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private Container getContentPane() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void pack() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

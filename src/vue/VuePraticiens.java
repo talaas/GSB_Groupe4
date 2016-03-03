@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vues;
+package vue;
 
-import controleur.CtrlAbstrait;
+//import controleur.CtrlAbstrait;
+import java.awt.Container;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -15,16 +16,16 @@ import javax.swing.JTextField;
  *
  * @author btssio
  */
-public class VuePraticiens extends VueAbstraite {
+public class VuePraticiens {
 
     /**
      * Creates new form praticiens
      */
-    public VuePraticiens(CtrlAbstrait ctrl) {
-        super(ctrl);
-        initComponents();
-        this.setLocation(500, 200);
-    }
+//    public VuePraticiens(CtrlAbstrait ctrl) {
+//        super(ctrl);
+//        initComponents();
+//        this.setLocation(500, 200);
+//    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -331,6 +332,18 @@ public class VuePraticiens extends VueAbstraite {
 
     public void setjTextFieldville(JTextField jTextFieldville) {
         this.jTextFieldville = jTextFieldville;
+    }
+
+    private void setDefaultCloseOperation(int EXIT_ON_CLOSE) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private Container getContentPane() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void pack() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 
