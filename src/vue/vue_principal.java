@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package applicationgsb.vue;
+package vue;
 
 /**
  *
@@ -48,7 +48,6 @@ public class vue_principal extends javax.swing.JFrame {
 
         jMenu5.setText("Compte-Rendus");
         jMenuBar2.add(jMenu5);
-        jMenu5.getAccessibleContext().setAccessibleName("Compte-Rendus");
 
         jMenu6.setText("Visiteurs");
         jMenuBar2.add(jMenu6);

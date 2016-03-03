@@ -8,9 +8,6 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Compte-Rendus"/>
           </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Compte-Rendus"/>
-          </AccessibilityProperties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu6">
           <Properties>
